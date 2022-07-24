@@ -6,7 +6,7 @@ type SubmissionProps = {
     createdAt: Date;
 }
 
-class Submission extends Entity<SubmissionProps>{
+export class Submission extends Entity<SubmissionProps>{
     private constructor(props: SubmissionProps, id?: string) {
         super(props, id);
     }
