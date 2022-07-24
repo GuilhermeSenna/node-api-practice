@@ -3,7 +3,7 @@ import {Entity} from "../../core/domain/Entity";
 type CorrectionProps = {
     grade: number;
     submissionId: string;
-    createdat: Date;
+    createdAt: Date;
 }
 
 export class Correction extends Entity<CorrectionProps>{
