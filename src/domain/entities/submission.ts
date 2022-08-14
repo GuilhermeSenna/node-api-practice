@@ -1,4 +1,4 @@
-import {Entity} from "../../core/domain/Entity";
+import { Entity } from "../../core/domain/Entity";
 
 type SubmissionProps = {
     challengeId: string;

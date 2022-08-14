@@ -1,4 +1,4 @@
-import {Entity} from "../../core/domain/Entity";
+import { Entity } from "../../core/domain/Entity";
 
 type StudentProps = {
     name: string;
@@ -11,7 +11,7 @@ export class Student extends Entity<StudentProps>{
     }
 
     static create(props: StudentProps, id?: string) {
-        const student = new Student(props);
+        const student = new Student(props, id);
 
         return student;
     }

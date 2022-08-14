@@ -1,4 +1,4 @@
-import {Student} from "../../domain/entities/student";
+import { Student } from "../../domain/entities/student";
 
 export interface StudentsRepository {
     // Returns a promise that can be a 'Student' or null

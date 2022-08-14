@@ -12,6 +12,8 @@ export abstract class Entity<T> {
     constructor(props: T, id?: string) {
         this.props = props;
 
+        console.log(props);
+
         // If no id is received (user don't exist) then create a new one!
         this._id = id ?? crypto.randomUUID();
     }

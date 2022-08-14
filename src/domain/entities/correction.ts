@@ -1,4 +1,4 @@
-import {Entity} from "../../core/domain/Entity";
+import { Entity } from "../../core/domain/Entity";
 
 type CorrectionProps = {
     grade: number;

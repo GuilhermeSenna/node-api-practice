@@ -1,6 +1,6 @@
-import {Submission} from "../../domain/entities/submission";
-import {ChallengesRepository} from "../repositories/ChallengesRepository";
-import {StudentsRepository} from "../repositories/StudentsRepository";
+import { Submission } from "../../domain/entities/submission";
+import { ChallengesRepository } from "../repositories/ChallengesRepository";
+import { StudentsRepository } from "../repositories/StudentsRepository";
 
 type CreateChallengeSubmissionRequest = {
     studentId: string;
@@ -11,9 +11,9 @@ export class CreateChallengeSubmission {
     constructor(
         private studentsRepository: StudentsRepository,
         private challengesRepository: ChallengesRepository
-    ) { }
+    ) {}
 
-    async execute({studentId, challengeId}: CreateChallengeSubmissionRequest) {
+    async execute({ studentId, challengeId }: CreateChallengeSubmissionRequest) {
         const student = await this.studentsRepository.findById(studentId);
 
         if (!student) {

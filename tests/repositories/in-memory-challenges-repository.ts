@@ -1,5 +1,5 @@
-import {ChallengesRepository} from "../../src/application/repositories/ChallengesRepository";
-import {Challenge} from "../../src/domain/entities/challenge";
+import { ChallengesRepository } from "../../src/application/repositories/ChallengesRepository";
+import { Challenge } from "../../src/domain/entities/challenge";
 
 export class InMemoryChallengesRepository implements ChallengesRepository {
 

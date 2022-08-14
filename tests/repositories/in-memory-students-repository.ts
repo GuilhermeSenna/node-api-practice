@@ -1,5 +1,5 @@
-import {StudentsRepository} from "../../src/application/repositories/StudentsRepository";
-import {Student} from "../../src/domain/entities/student";
+import { StudentsRepository } from "../../src/application/repositories/StudentsRepository";
+import { Student } from "../../src/domain/entities/student";
 
 export class InMemoryStudentsRepository implements StudentsRepository {
 
